@@ -8,8 +8,10 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "node scripts/build.mjs",
-    "start": "wrangler dev --config dist/server/wrangler.json",
-    "lint": "oxlint",
+    "start": "node scripts/serve.mjs",
+    "check": "tsc --noEmit --incremental false && node scripts/check-data.mjs",
+    "test:data": "node scripts/check-data.mjs",
+    "lint": "oxlint app lib components/atlas-map.tsx components/place-guide.tsx components/pokemon-icon.tsx",
     "format": "oxfmt"
   },
   "dependencies": {

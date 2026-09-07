@@ -1,0 +1,129 @@
+{
+  "game": "Pokemon Let's Go Pikachu / Let's Go Eevee, Generation VII",
+  "sourcePage": "https://www.mewmaps.org/lets-go-pikachu-eevee",
+  "assets": [
+    {
+      "key": "region",
+      "file": "mewmaps-region.jpg",
+      "width": 4740,
+      "height": 3374,
+      "source": "https://drive.google.com/file/d/1QvUV194EELs24FZCLl_tXrI_hDerltK_/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1QvUV194EELs24FZCLl_tXrI_hDerltK_",
+      "notes": "Full overworld montage with all 10 cities and 25 routes. Region overview is a fan-assembled LGPE map, not the in-game Town Map. Its baked text mistakenly says Saffron Town."
+    },
+    {
+      "key": "cerulean-cave",
+      "file": "mewmaps-cerulean.jpg",
+      "width": 2777,
+      "height": 4750,
+      "source": "https://drive.google.com/file/d/12lroz8aTnnUxkIwKLPx0LlBRzI_6YHro/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=12lroz8aTnnUxkIwKLPx0LlBRzI_6YHro",
+      "notes": "Complete floors; letters pair ladders; Mewtwo and item icons are shown."
+    },
+    {
+      "key": "mt-moon",
+      "file": "mewmaps-mt-moon.jpg",
+      "width": 3000,
+      "height": 5100,
+      "source": "https://drive.google.com/file/d/1jgppmTGBcgaDxpSolJM4e_fE1v4z1QN9/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1jgppmTGBcgaDxpSolJM4e_fE1v4z1QN9",
+      "notes": "Complete floors and connecting ladder letters."
+    },
+    {
+      "key": "pokemon-mansion",
+      "file": "mewmaps-pokemon-mansion.jpg",
+      "width": 2500,
+      "height": 2304,
+      "source": "https://drive.google.com/file/d/1aml7Wzhjkrb05COc17R6Xv1zeN7scZXl/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1aml7Wzhjkrb05COc17R6Xv1zeN7scZXl",
+      "notes": "Complete floors, letters connect stairs/ladders."
+    },
+    {
+      "key": "pokemon-tower",
+      "file": "mewmaps-pokemon-tower.jpg",
+      "width": 1277,
+      "height": 4986,
+      "source": "https://drive.google.com/file/d/1mEEX6D7aXpCPMkBwm9rpP8MqhSTAJ3zM/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1mEEX6D7aXpCPMkBwm9rpP8MqhSTAJ3zM",
+      "notes": "Complete playable upper floors; 1F lobby omitted."
+    },
+    {
+      "key": "power-plant",
+      "file": "mewmaps-power-plant.jpg",
+      "width": 1517,
+      "height": 1400,
+      "source": "https://drive.google.com/file/d/156SYowdbhlhK8VO6L9f65i8BMnxhd8hj/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=156SYowdbhlhK8VO6L9f65i8BMnxhd8hj",
+      "notes": "Complete floor with Zapdos, entrance, quick exit and items."
+    },
+    {
+      "key": "rock-tunnel",
+      "file": "mewmaps-rock-tunnel.jpg",
+      "width": 1035,
+      "height": 1800,
+      "source": "https://drive.google.com/file/d/1p3jpJYhE-rPsfkRc_DoTMLq1BBuC003u/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1p3jpJYhE-rPsfkRc_DoTMLq1BBuC003u",
+      "notes": "Complete floors with ladder letters, entrances and items."
+    },
+    {
+      "key": "rocket-hideout",
+      "file": "mewmaps-rocket-hideout.jpg",
+      "width": 2200,
+      "height": 3300,
+      "source": "https://drive.google.com/file/d/1QZ3q5egolCet679irybFSYOkSj8wFE3M/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1QZ3q5egolCet679irybFSYOkSj8wFE3M",
+      "notes": "Complete floors including arrow puzzles and Giovanni room."
+    },
+    {
+      "key": "seafoam-islands",
+      "file": "mewmaps-seafoam.jpg",
+      "width": 4472,
+      "height": 4500,
+      "source": "https://drive.google.com/file/d/1JyjDJaOddwAkqZjSV-yYmCbweYdPv7TU/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1JyjDJaOddwAkqZjSV-yYmCbweYdPv7TU",
+      "notes": "Complete floors. Letters pair ladders. Numbers on blocks and holes explain the boulder puzzle; letters do not indicate progression order."
+    },
+    {
+      "key": "silph-co",
+      "file": "mewmaps-silph-co.jpg",
+      "width": 2250,
+      "height": 3700,
+      "source": "https://drive.google.com/file/d/1c_WNozj5RPIwTX6Ask3Pw8WfAsbZ11c7/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1c_WNozj5RPIwTX6Ask3Pw8WfAsbZ11c7",
+      "notes": "IMPORTANT: baked labels say 1F-10F but correspond to game/Serebii 2F-11F. Add 1 for the user-facing floor names. The 1F lobby is omitted. Letters pair teleporters."
+    },
+    {
+      "key": "ss-anne",
+      "file": "mewmaps-ss-anne.jpg",
+      "width": 1719,
+      "height": 3100,
+      "source": "https://drive.google.com/file/d/12rQ3hq8Ylwj7MvpZVdKRDG0_-E-rb_NO/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=12rQ3hq8Ylwj7MvpZVdKRDG0_-E-rb_NO",
+      "notes": "Decks, cabins, captain room, galley, rest cabin and connections shown."
+    },
+    {
+      "key": "viridian-forest",
+      "file": "mewmaps-viridian-forest.jpg",
+      "width": 1000,
+      "height": 1200,
+      "source": "https://drive.google.com/file/d/18gzoU-tBXoT5OxyZF3YbF3gdyz7cZWgZ/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=18gzoU-tBXoT5OxyZF3YbF3gdyz7cZWgZ",
+      "notes": "Full forest map with north/south entrances and items."
+    },
+    {
+      "key": "victory-road",
+      "file": "mewmaps-victory-road.jpg",
+      "width": 6100,
+      "height": 4264,
+      "source": "https://drive.google.com/file/d/1ivPtAlpqybANC1Tzjm-a976Ma14vxy49/view?usp=sharing",
+      "original": "https://drive.google.com/uc?export=download&id=1ivPtAlpqybANC1Tzjm-a976Ma14vxy49",
+      "notes": "IMPORTANT: baked map labels 1F-West Side / 1F-East Side / 2F correspond to game/Serebii 1F / 2F / 3F, respectively. Contains complete floors, boulder switches, ladders, Moltres and exit."
+    }
+  ],
+  "townMap": {
+    "file": "kanto-town-map-pe.png",
+    "source": "https://bulbapedia.bulbagarden.net/wiki/Town_Map",
+    "original": "https://archives.bulbagarden.net/media/upload/d/d5/Kanto_Town_Map_PE.png"
+  },
+  "rights": "No reuse license or permission statement found on the MewMaps homepage or LGPE collection page. No contact or license page was linked in homepage navigation. Do not describe these files as freely licensed."
+}

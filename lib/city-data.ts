@@ -1,172 +1,662 @@
-export type CityBuilding = {
+export type CityPoint = {
   id: string;
   name: string;
-  category: 'casa' | 'serviço' | 'ginásio' | 'especial';
-  x: number;
-  y: number;
+  type: 'casa' | 'serviço' | 'ginásio' | 'acesso' | 'externo' | 'npc';
   description: string;
   npcs: string[];
   rewards?: string[];
+  target?: string;
+  x?: number;
+  y?: number;
 };
-
-export type CityGuide = {
+export type Gift = {
   name: string;
-  image: string;
-  source: string;
-  accessible: number;
-  houses: number;
-  buildings: CityBuilding[];
-  importantNpcs: string[];
-  trade?: { give: string; receive: string; level: number; npc: string; location: string };
-  water: { method: 'Sea Skim' | 'Sem encontros'; area: string; pokemon: string[]; note: string };
+  level: number;
+  note: string;
+  method?: 'Presente' | 'Compra' | 'Fóssil';
 };
-
-const source = 'https://bulbapedia.bulbagarden.net/wiki/Category:Kanto_locations';
-
+export type Trade = {
+  npc: string;
+  species: string;
+  level: number;
+  version?: string;
+};
+export type CityGuide = {
+  points: CityPoint[];
+  gifts?: Gift[];
+  trade?: Trade;
+  source: string;
+  note?: string;
+};
+const p = (
+  id: string,
+  name: string,
+  type: CityPoint['type'],
+  description: string,
+  npcs: string[] = [],
+  rewards: string[] = [],
+  xy?: [number, number],
+  target?: string,
+): CityPoint => ({
+  id,
+  name,
+  type,
+  description,
+  npcs,
+  rewards,
+  x: xy?.[0],
+  y: xy?.[1],
+  target,
+});
+const center = (xy?: [number, number], extra: string[] = []) =>
+  p(
+    'center',
+    'Centro Pokémon',
+    'serviço',
+    'Recupere a equipe gratuitamente. O Pokémon Box é levado na mochila; não há PC de armazenamento.',
+    ['Enfermeira Joy', ...extra],
+    [],
+    xy,
+  );
+const mart = (xy?: [number, number]) =>
+  p(
+    'mart',
+    'Poké Mart',
+    'serviço',
+    'Compre Poké Balls, itens de cura e outros suprimentos. O estoque cresce conforme o progresso.',
+    ['Atendente'],
+    [],
+    xy,
+  );
+const gym = (
+  name: string,
+  description: string,
+  npc: string,
+  rewards: string[],
+  xy?: [number, number],
+) => p('gym', name, 'ginásio', description, [npc], rewards, xy);
+const source = (name: string) =>
+  'https://bulbapedia.bulbagarden.net/wiki/' + name;
 export const cityData: Record<string, CityGuide> = {
   pallet: {
-    name: 'Pallet Town', image: 'pallet.png', source, accessible: 3, houses: 2,
-    buildings: [
-      { id:'player-house', name:'Casa do jogador', category:'casa', x:31, y:38, description:'Casa inicial. O quarto fica no andar superior.', npcs:['Mãe'], rewards:['Descanso gratuito'] },
-      { id:'rival-house', name:'Casa de Trace', category:'casa', x:66, y:37, description:'Residência do rival e de sua irmã.', npcs:['Daisy','Trace'], rewards:['Town Map'] },
-      { id:'oak-lab', name:'Laboratório do Prof. Oak', category:'especial', x:50, y:75, description:'Centro da pesquisa Pokémon e ponto inicial da aventura.', npcs:['Professor Oak','Assistentes','Trace'], rewards:['Pokédex','Pikachu parceiro','Mega Stones (pós-jogo)'] },
+    source: source('Pallet_Town'),
+    points: [
+      p(
+        'player-house',
+        'Casa do jogador',
+        'casa',
+        'O quarto fica no andar superior. Fale com sua mãe para descansar. Ela entrega o Town Map fora do laboratório no início.',
+        ['Mãe'],
+        ['Town Map'],
+        [1055, 2170],
+      ),
+      p(
+        'rival-house',
+        'Casa de Trace',
+        'casa',
+        'Casa do rival e de sua irmã. A irmã entrega Sportswear para o parceiro depois da entrega da encomenda.',
+        ['Trace', 'Irmã de Trace'],
+        ['Sportswear'],
+        [1180, 2160],
+      ),
+      p(
+        'oak-lab',
+        'Laboratório de Oak',
+        'serviço',
+        'Conheça seu parceiro e receba a Pokédex. Volte aqui após sete insígnias para o evento de Mega Evolução com Blue.',
+        ['Professor Oak', 'Assistentes', 'Trace', 'Blue'],
+        ['Pokédex', 'Venusaurite', 'Charizardite X e Y', 'Blastoisinite'],
+        [1175, 2230],
+      ),
     ],
-    importantNpcs:['Professor Oak — Pokédex e parceiro','Daisy — entrega o Town Map','Mãe — cura a equipe'],
-    water:{method:'Sea Skim',area:'Rota 21, imediatamente ao sul',pokemon:['Tentacool','Tentacruel','Magikarp','Staryu'],note:'A água navegável pertence à Rota 21, não ao mapa interno de Pallet.'},
+    gifts: [
+      {
+        name: 'Pikachu',
+        level: 5,
+        note: 'Parceiro inicial. Esta forma não evolui e não pode ser transferida.',
+      },
+    ],
   },
   viridian: {
-    name:'Viridian City', image:'viridian.png', source, accessible:6, houses:2,
-    buildings:[
-      {id:'viridian-center',name:'Centro Pokémon',category:'serviço',x:30,y:42,description:'Cura, PC e comunicação.',npcs:['Enfermeira Joy']},
-      {id:'viridian-mart',name:'Poké Mart',category:'serviço',x:68,y:34,description:'Primeira loja da jornada e ponto da encomenda de Oak.',npcs:['Atendente'],rewards:['Oak’s Parcel']},
-      {id:'academy',name:'Academia Pokémon',category:'especial',x:71,y:62,description:'Tutoriais sobre status e batalhas.',npcs:['Professor da academia','Alunos']},
-      {id:'viridian-gym',name:'Ginásio de Viridian',category:'ginásio',x:47,y:20,description:'Oitavo Ginásio; torna-se acessível no fim da campanha.',npcs:['Giovanni','Blue (pós-jogo)'],rewards:['Earth Badge','TM41 Earthquake']},
-      {id:'viridian-house-1',name:'Casa sudoeste',category:'casa',x:19,y:70,description:'Residência próxima à saída sul.',npcs:['Moradores']},
-      {id:'viridian-house-2',name:'Casa noroeste',category:'casa',x:23,y:20,description:'Residência na parte alta da cidade.',npcs:['Homem adormecido'],rewards:['TM11 Will-O-Wisp']},
+    source: source('Viridian_City'),
+    points: [
+      center([1166, 1663]),
+      mart([1295, 1610]),
+      gym(
+        'Ginásio de Viridian',
+        'Oitavo ginásio. Só fica disponível perto do final da campanha. Blue assume depois de Giovanni.',
+        'Giovanni',
+        ['Earth Badge', 'TM41 Earthquake'],
+        [1285, 1530],
+      ),
+      p(
+        'school',
+        'Trainers’ School',
+        'serviço',
+        'Confira o quadro para aprender sobre condições de status.',
+        ['Professor', 'Estudantes'],
+      ),
+      p(
+        'resident-house',
+        'Casa da família',
+        'casa',
+        'Residência da cidade, próxima à escola. Converse com os moradores.',
+        ['Moradores'],
+      ),
+      p(
+        'parcel',
+        'Atendente da encomenda',
+        'externo',
+        'O atendente fica diante do Mart e pede a entrega da encomenda ao Professor Oak.',
+        ['Atendente do Mart'],
+        ['Parcel'],
+      ),
+      p(
+        'will-o-wisp',
+        'Treinador no sudoeste',
+        'externo',
+        'Alcance o homem no sudoeste usando Chop Down. Ele não fica dentro de uma casa.',
+        ['Homem descansando'],
+        ['TM11 Will-O-Wisp'],
+      ),
     ],
-    importantNpcs:['Atendente do Mart — entrega Oak’s Parcel','Giovanni — líder do oitavo Ginásio','Blue — assume o Ginásio no pós-jogo'],
-    water:{method:'Sem encontros',area:'Lagos decorativos da cidade',pokemon:[],note:'Os pequenos lagos de Viridian não possuem uma tabela própria de encontros.'},
   },
   pewter: {
-    name:'Pewter City', image:'pewter.png', source, accessible:7, houses:2,
-    buildings:[
-      {id:'pewter-center',name:'Centro Pokémon',category:'serviço',x:29,y:62,description:'Cura a equipe antes do primeiro Ginásio.',npcs:['Enfermeira Joy','Vendedor de Magikarp'],rewards:['Magikarp por $500']},
-      {id:'pewter-mart',name:'Poké Mart',category:'serviço',x:55,y:62,description:'Loja de suprimentos da cidade.',npcs:['Atendentes']},
-      {id:'pewter-gym',name:'Ginásio de Pewter',category:'ginásio',x:77,y:55,description:'Ginásio de tipo Pedra.',npcs:['Brock'],rewards:['Boulder Badge','TM01 Headbutt']},
-      {id:'museum',name:'Museu de Ciências',category:'especial',x:42,y:18,description:'Exposições de fósseis e espaço. A entrada lateral exige Chop Down.',npcs:['Cientistas'],rewards:['Old Amber']},
-      {id:'slowpoke-yard',name:'Quintal do Slowpoke',category:'especial',x:17,y:37,description:'Ajude a cuidar do Slowpoke.',npcs:['Senhora do Slowpoke'],rewards:['Big Pearl (diária)']},
-      {id:'pewter-house-1',name:'Casa leste',category:'casa',x:80,y:27,description:'Residência na parte leste.',npcs:['Moradores']},
-      {id:'pewter-house-2',name:'Casa sul',category:'casa',x:72,y:79,description:'Residência próxima à Rota 3.',npcs:['Moradores']},
+    source: source('Pewter_City'),
+    points: [
+      center([1016, 788]),
+      mart([1178, 757]),
+      gym(
+        'Ginásio de Pewter',
+        'Mostre um Pokémon de tipo Planta ou Água para entrar. Brock usa Geodude e Onix.',
+        'Brock',
+        ['Boulder Badge', 'TM01 Headbutt'],
+        [967, 706],
+      ),
+      p(
+        'museum',
+        'Museu de Ciências',
+        'serviço',
+        'A exposição principal cobra ingresso. Use Chop Down para chegar à entrada traseira e obter Old Amber. Restaure o fóssil em Cinnabar.',
+        ['Cientistas'],
+        ['Old Amber'],
+        [996, 625],
+      ),
+      p(
+        'slowpoke',
+        'Cuidadora de Slowpoke',
+        'externo',
+        'A senhora a oeste do museu pede que você cuide de Slowpoke por um momento. A recompensa é diária.',
+        ['Senhora com Slowpoke'],
+        ['Big Pearl diária'],
+      ),
+      p(
+        'blue',
+        'Blue, após o ginásio',
+        'externo',
+        'Encontre Blue ao sair do ginásio após vencer Brock.',
+        ['Blue'],
+        ['Great Ball ×5'],
+      ),
+      p(
+        'house',
+        'Residência de Pewter',
+        'casa',
+        'Converse com os moradores da cidade. Não confunda o Centro daqui com o da Rota 4: o vendedor de Magikarp fica na rota.',
+        ['Moradores'],
+      ),
     ],
-    importantNpcs:['Brock — Boulder Badge','Senhora do Slowpoke — Big Pearl diária','Cientista do museu — Old Amber'],
-    water:{method:'Sem encontros',area:'Pewter City',pokemon:[],note:'Não há área aquática capturável dentro da cidade.'},
   },
   cerulean: {
-    name:'Cerulean City', image:'cerulean.png', source, accessible:8, houses:3,
-    buildings:[
-      {id:'cerulean-center',name:'Centro Pokémon',category:'serviço',x:43,y:29,description:'Cura, PC e a troca repetível por Rattata de Alola.',npcs:['Enfermeira Joy','Tatianna — troca Pokémon']},
-      {id:'cerulean-mart',name:'Poké Mart',category:'serviço',x:19,y:76,description:'Loja ao sul do Ginásio.',npcs:['Atendentes']},
-      {id:'cerulean-gym',name:'Ginásio de Cerulean',category:'ginásio',x:77,y:60,description:'Ginásio aquático com piscina interna.',npcs:['Misty'],rewards:['Cascade Badge','TM29 Scald']},
-      {id:'bike-shop',name:'Loja de bicicletas',category:'serviço',x:73,y:25,description:'Exibe bicicletas; o Bike Voucher rende acessórios, não uma bicicleta utilizável.',npcs:['Dono da loja'],rewards:['Heart Scale ×5']},
-      {id:'bulbasaur-house',name:'Casa do Bulbasaur',category:'casa',x:20,y:27,description:'Uma cuidadora entrega Bulbasaur após 30 capturas.',npcs:['Cuidadora'],rewards:['Bulbasaur']},
-      {id:'burgled-house',name:'Casa assaltada',category:'casa',x:83,y:38,description:'A Equipe Rocket abriu uma passagem nos fundos.',npcs:['Moradores','Rocket Grunt'],rewards:['TM10 Dig']},
-      {id:'badge-house',name:'Casa das Insígnias',category:'casa',x:56,y:74,description:'Morador explica os efeitos das insígnias.',npcs:['Especialista em insígnias']},
-      {id:'cerulean-cave-gate',name:'Acesso à Cerulean Cave',category:'especial',x:8,y:20,description:'Acesso pós-jogo ao covil de Mewtwo, via Sea Skim.',npcs:['Coach Trainer Harjit'],rewards:['TM60 Megahorn']},
+    source: source('Cerulean_City'),
+    trade: { npc: 'Tatianna', species: 'Rattata', level: 12 },
+    gifts: [
+      {
+        name: 'Bulbasaur',
+        level: 12,
+        note: 'Mulher na casa ao lado do Centro Pokémon; exige pelo menos 30 capturas totais, incluindo repetidos.',
+      },
     ],
-    importantNpcs:['Misty — Cascade Badge','Tatianna — troca Rattata por Rattata de Alola','Cuidadora — Bulbasaur após 30 capturas'],
-    trade:{give:'Rattata',receive:'Rattata de Alola',level:12,npc:'Tatianna',location:'Centro Pokémon'},
-    water:{method:'Sea Skim',area:'Canal de Cerulean e acesso à caverna',pokemon:['Psyduck','Golduck','Poliwag','Poliwhirl','Magikarp'],note:'Os encontros surgem sobre a água depois de aprender Sea Skim.'},
+    points: [
+      center([3065, 562], ['Tatianna — troca de Alola', 'Tutor do parceiro']),
+      mart([3180, 647]),
+      gym(
+        'Ginásio de Cerulean',
+        'Apresente um Pokémon de nível 15 ou superior. Misty usa Psyduck e Starmie.',
+        'Misty',
+        ['Cascade Badge', 'TM29 Scald'],
+        [3165, 565],
+      ),
+      p(
+        'bulbasaur-house',
+        'Casa do Bulbasaur',
+        'casa',
+        'A cuidadora entrega Bulbasaur depois de você registrar 30 capturas totais.',
+        ['Cuidadora de Bulbasaur'],
+        ['Bulbasaur, Nv. 12'],
+      ),
+      p(
+        'burgled-house',
+        'Casa assaltada',
+        'casa',
+        'Atravesse o buraco na parede e enfrente o Rocket no quintal.',
+        ['Casal da casa', 'Oficial de polícia', 'Recruta Rocket'],
+        ['TM10 Dig'],
+      ),
+      p(
+        'badge-house',
+        'Casa do especialista em insígnias',
+        'casa',
+        'O morador explica as insígnias. Examine o jardim atrás da casa.',
+        ['Especialista em insígnias'],
+        ['Rare Candy no jardim'],
+      ),
+      p(
+        'bike-house',
+        'Casa do Bike Maniac',
+        'casa',
+        'Ouça a descrição de todas as bicicletas para receber a recompensa. Não existe Bike Voucher em Let’s Go.',
+        ['Bike Maniac'],
+        ['Heart Scale ×5'],
+      ),
+      p(
+        'cave-access',
+        'Acesso à Cerulean Cave',
+        'acesso',
+        'Pelo lado da Rota 24, navegue com Sea Skim até a entrada. A caverna só abre após a Liga.',
+        ['Guarda da caverna'],
+        [],
+        undefined,
+        'cerulean-cave',
+      ),
+    ],
   },
   vermilion: {
-    name:'Vermilion City', image:'vermilion.png', source, accessible:8, houses:3,
-    buildings:[
-      {id:'vermilion-center',name:'Centro Pokémon',category:'serviço',x:37,y:43,description:'Contém a troca repetível por Geodude de Alola.',npcs:['Enfermeira Joy','Higeo — troca Pokémon']},
-      {id:'vermilion-mart',name:'Poké Mart',category:'serviço',x:62,y:43,description:'Loja central próxima à saída da Rota 11.',npcs:['Atendentes']},
-      {id:'vermilion-gym',name:'Ginásio de Vermilion',category:'ginásio',x:79,y:72,description:'Ginásio elétrico de Lt. Surge; exige Chop Down.',npcs:['Lt. Surge'],rewards:['Thunder Badge','TM36 Thunderbolt']},
-      {id:'fan-club',name:'Pokémon Fan Club',category:'especial',x:22,y:61,description:'Ouça a história do presidente.',npcs:['Presidente do Fan Club'],rewards:['Pikachu Set','Bike Voucher']},
-      {id:'jenny-post',name:'Posto da Oficial Jenny',category:'especial',x:68,y:22,description:'Jenny entrega Squirtle quando você alcança 60 capturas.',npcs:['Oficial Jenny'],rewards:['Squirtle']},
-      {id:'vermilion-house-1',name:'Casa do pescador',category:'casa',x:18,y:32,description:'Casa de um entusiasta de Pokémon aquáticos.',npcs:['Pescador']},
-      {id:'vermilion-house-2',name:'Casa de Diglett',category:'casa',x:82,y:30,description:'Residência próxima à Rota 11.',npcs:['Moradores']},
-      {id:'ss-anne',name:'Cais do S.S. Anne',category:'especial',x:50,y:86,description:'Navio da história principal. O capitão ensina Chop Down.',npcs:['Capitão','Marinheiros','Rival'],rewards:['Chop Down']},
+    source: source('Vermilion_City'),
+    trade: { npc: 'Higeo', species: 'Geodude', level: 16 },
+    gifts: [
+      {
+        name: 'Squirtle',
+        level: 16,
+        note: 'Oficial Jenny, na rua; exige 60 capturas totais, incluindo repetidos.',
+      },
+      {
+        name: 'Persian',
+        level: 16,
+        note: 'Na versão Pikachu, capture cinco Growlithe e converse novamente com o fã de Pokémon da cidade.',
+      },
     ],
-    importantNpcs:['Higeo — troca Geodude por Geodude de Alola','Oficial Jenny — Squirtle após 60 capturas','Capitão — ensina Chop Down'],
-    trade:{give:'Geodude',receive:'Geodude de Alola',level:16,npc:'Higeo',location:'Centro Pokémon'},
-    water:{method:'Sem encontros',area:'Porto de Vermilion',pokemon:[],note:'O porto é cenário do S.S. Anne; use as rotas marítimas para encontros aquáticos.'},
+    points: [
+      center([2990, 1800], ['Higeo — troca de Alola']),
+      mart([3133, 1891]),
+      gym(
+        'Ginásio de Vermilion',
+        'Use Chop Down para alcançar o ginásio e resolva o quebra-cabeça dos interruptores.',
+        'Lt. Surge',
+        ['Thunder Badge', 'TM36 Thunderbolt'],
+        [2972, 1935],
+      ),
+      p(
+        'fan-club',
+        'Pokémon Fan Club',
+        'serviço',
+        'Ouça o presidente falar de seu Pokémon favorito. A recompensa é um conjunto de roupas do parceiro, não um vale de bicicleta.',
+        ['Presidente do fã-clube'],
+        ['Pikachu Set'],
+      ),
+      p(
+        'jenny',
+        'Oficial Jenny',
+        'externo',
+        'Converse com Jenny depois de realizar 60 capturas para receber Squirtle. Ela fica na rua.',
+        ['Oficial Jenny'],
+        ['Squirtle, Nv. 16'],
+      ),
+      p(
+        'persian',
+        'Fã de Growlithe e Meowth',
+        'externo',
+        'Em Let’s Go, Pikachu!, o pedido é capturar cinco Growlithe. Na versão Eevee, o pedido e o presente são diferentes.',
+        ['Fã de Pokémon'],
+        ['Persian, Nv. 16'],
+      ),
+      p(
+        'pier',
+        'Cais e S.S. Anne',
+        'acesso',
+        'Bill entrega o S.S. Ticket na Rota 25. Visite todas as cabines antes de concluir a tarefa do capitão.',
+        ['Capitão', 'Mina no cais'],
+        ['Chop Down'],
+        [3100, 2150],
+        'ss-anne',
+      ),
+    ],
   },
   lavender: {
-    name:'Lavender Town', image:'lavender.png', source, accessible:6, houses:2,
-    buildings:[
-      {id:'lavender-center',name:'Centro Pokémon',category:'serviço',x:26,y:62,description:'Contém a troca repetível por Diglett de Alola.',npcs:['Enfermeira Joy','Diggette — troca Pokémon']},
-      {id:'lavender-mart',name:'Poké Mart',category:'serviço',x:68,y:67,description:'Loja no sudeste da cidade.',npcs:['Atendentes']},
-      {id:'pokemon-tower',name:'Torre Pokémon',category:'especial',x:77,y:25,description:'Masmorra vertical com Gastly, Haunter e a história de Cubone.',npcs:['Mr. Fuji','Channelers','Jessie e James'],rewards:['Poké Flute']},
-      {id:'volunteer-house',name:'Casa dos Voluntários',category:'casa',x:30,y:29,description:'Lar de Mr. Fuji e dos Pokémon resgatados.',npcs:['Mr. Fuji','Voluntários']},
-      {id:'name-rater',name:'Casa do Name Rater',category:'casa',x:51,y:66,description:'Permite alterar apelidos de Pokémon elegíveis.',npcs:['Name Rater']},
-      {id:'memorial',name:'Memorial Pokémon',category:'especial',x:49,y:35,description:'Pequeno memorial no centro da cidade.',npcs:['Moradores']},
+    source: source('Lavender_Town'),
+    trade: { npc: 'Digette', species: 'Diglett', level: 25 },
+    points: [
+      center([4136, 1139], ['Digette — troca de Alola']),
+      mart([4316, 1260]),
+      p(
+        'tower',
+        'Pokémon Tower',
+        'acesso',
+        'Obtenha o Silph Scope no esconderijo Rocket para identificar os fantasmas. Resgate Mr. Fuji no topo.',
+        ['Mr. Fuji', 'Channelers', 'Equipe Rocket'],
+        [],
+        [4301, 1167],
+        'pokemon-tower',
+      ),
+      p(
+        'fuji-house',
+        'Volunteer Pokémon House',
+        'casa',
+        'Depois do resgate, fale com Mr. Fuji em sua casa. A Poké Flute acorda os Snorlax das Rotas 12 e 16.',
+        ['Mr. Fuji', 'Voluntários'],
+        ['Poké Flute'],
+      ),
+      p(
+        'name-house',
+        'Casa do antigo Name Rater',
+        'casa',
+        'Em Let’s Go, o morador apenas comenta sobre nomes. Você pode mudar apelidos pelo menu do próprio Pokémon.',
+        ['Morador'],
+      ),
+      p(
+        'cubone-house',
+        'Residência de Lavender',
+        'casa',
+        'Converse com os moradores para conhecer a história da cidade e de Cubone.',
+        ['Moradores'],
+      ),
     ],
-    importantNpcs:['Diggette — troca Diglett por Diglett de Alola','Mr. Fuji — entrega a Poké Flute','Name Rater — altera apelidos'],
-    trade:{give:'Diglett',receive:'Diglett de Alola',level:25,npc:'Diggette',location:'Centro Pokémon'},
-    water:{method:'Sem encontros',area:'Lavender Town',pokemon:[],note:'A cidade não possui água navegável; consulte as Rotas 10 e 12.'},
   },
   celadon: {
-    name:'Celadon City', image:'celadon.png', source, accessible:9, houses:1,
-    buildings:[
-      {id:'celadon-center',name:'Centro Pokémon',category:'serviço',x:28,y:58,description:'Troca exclusiva da versão Pikachu por Sandshrew de Alola.',npcs:['Enfermeira Joy','Nicholice — troca Pokémon','Tutor de movimentos']},
-      {id:'department-store',name:'Loja de Departamentos',category:'serviço',x:27,y:23,description:'Seis andares de itens, TMs, pedras evolutivas e acessórios.',npcs:['Atendentes','Girl no terraço'],rewards:['TM06 Light Screen','TM09 Reflect']},
-      {id:'celadon-gym',name:'Ginásio de Celadon',category:'ginásio',x:15,y:77,description:'Ginásio de tipo Grama.',npcs:['Erika'],rewards:['Rainbow Badge','TM53 Mega Drain']},
-      {id:'game-corner',name:'Rocket Game Corner',category:'especial',x:57,y:66,description:'Fachada do esconderijo subterrâneo da Equipe Rocket.',npcs:['Rocket Grunts','Archer','Giovanni'],rewards:['Silph Scope']},
-      {id:'condominiums',name:'Celadon Condominiums',category:'especial',x:76,y:30,description:'Prédio residencial com Game Freak e acesso ao telhado.',npcs:['Diretor da Game Freak','Fortune Teller'],rewards:['Diplomas da Pokédex']},
-      {id:'celadon-hotel',name:'Hotel de Celadon',category:'serviço',x:78,y:69,description:'Hotel frequentado por visitantes.',npcs:['Hóspedes']},
-      {id:'restaurant',name:'Restaurante',category:'serviço',x:43,y:66,description:'Restaurante no centro comercial.',npcs:['Clientes']},
-      {id:'tea-house',name:'Casa da amizade',category:'casa',x:63,y:33,description:'Residência junto aos condomínios.',npcs:['Moradores'],rewards:['Tea']},
-      {id:'porygon-spot',name:'Ponto do Porygon',category:'especial',x:40,y:52,description:'Depois de expulsar a Equipe Rocket, converse com o NPC para receber Porygon.',npcs:['Homem assustado'],rewards:['Porygon']},
+    source: source('Celadon_City'),
+    trade: {
+      npc: 'Nicholice',
+      species: 'Sandshrew',
+      level: 27,
+      version: 'Pikachu',
+    },
+    points: [
+      center([2579, 1120], ['Nicholice — troca de Alola', 'Madam Celadon']),
+      gym(
+        'Ginásio de Celadon',
+        'Mostre um Pokémon considerado fofo para entrar. Erika é especialista em Planta.',
+        'Erika',
+        ['Rainbow Badge', 'TM53 Mega Drain'],
+        [2109, 1320],
+      ),
+      p(
+        'department',
+        'Department Store',
+        'serviço',
+        'Loja de vários andares. Compre pedras evolutivas no 4F. No terraço, ofereça bebidas à garota.',
+        ['Atendentes', 'Garota do terraço'],
+        [
+          'TM03 Helping Hand — 3F',
+          'Fresh Water → TM06 Light Screen',
+          'Soda Pop → TM09 Reflect',
+          'Lemonade → TM07 Protect',
+        ],
+        [2096, 1128],
+      ),
+      p(
+        'condominiums',
+        'Celadon Condominiums',
+        'casa',
+        'Encontre Brock diante do edifício para receber Tea e liberar os portões de Saffron.',
+        ['Brock', 'Equipe GAME FREAK'],
+        ['Tea'],
+        undefined,
+      ),
+      p(
+        'game-corner',
+        'Game Corner',
+        'acesso',
+        'Examine o pôster protegido pelo Rocket para revelar o acesso ao esconderijo.',
+        ['Equipe Rocket'],
+        ['Silph Scope no esconderijo'],
+        [2396, 1219],
+        'rocket-hideout',
+      ),
+      p(
+        'hotel',
+        'Hotel de Celadon',
+        'serviço',
+        'Converse com os hóspedes. O hotel não funciona como Centro Pokémon.',
+        ['Hóspedes'],
+      ),
+      p(
+        'madam',
+        'Madam Celadon',
+        'npc',
+        'Serviço dentro do Centro Pokémon. Por ₽10.000, determina a Nature dos encontros até o fim do dia.',
+        ['Madam Celadon'],
+      ),
+      p(
+        'sky-dash',
+        'Instrutor de Sky Dash',
+        'externo',
+        'Depois de concluir o esconderijo Rocket, encontre o homem com a máquina voadora perto do Game Corner.',
+        ['Instrutor de Sky Dash'],
+        ['Sky Dash'],
+      ),
     ],
-    importantNpcs:['Nicholice — troca Sandshrew por Sandshrew de Alola','Erika — Rainbow Badge','Fortune Teller — define Nature dos encontros'],
-    trade:{give:'Sandshrew',receive:'Sandshrew de Alola',level:27,npc:'Nicholice',location:'Centro Pokémon'},
-    water:{method:'Sem encontros',area:'Celadon City',pokemon:[],note:'As fontes e canais urbanos não possuem tabela de encontros.'},
   },
   saffron: {
-    name:'Saffron City', image:'saffron.png', source, accessible:8, houses:2,
-    buildings:[
-      {id:'saffron-center',name:'Centro Pokémon',category:'serviço',x:62,y:58,description:'Troca repetível por Raichu de Alola.',npcs:['Enfermeira Joy','Psytrice — troca Pokémon']},
-      {id:'saffron-mart',name:'Poké Mart',category:'serviço',x:77,y:46,description:'Loja no lado leste.',npcs:['Atendentes']},
-      {id:'saffron-gym',name:'Ginásio de Saffron',category:'ginásio',x:74,y:22,description:'Labirinto de teletransportadores e Pokémon Psíquicos.',npcs:['Sabrina'],rewards:['Marsh Badge','TM33 Calm Mind']},
-      {id:'fighting-dojo',name:'Fighting Dojo',category:'especial',x:57,y:20,description:'Desafio opcional de tipo Lutador.',npcs:['Mestre do Dojo'],rewards:['Hitmonlee ou Hitmonchan']},
-      {id:'silph',name:'Silph Co.',category:'especial',x:39,y:42,description:'Prédio de onze andares ocupado pela Equipe Rocket.',npcs:['Presidente da Silph','Archer','Giovanni','Funcionário do Lapras'],rewards:['Master Ball','Lapras']},
-      {id:'copycat-house',name:'Casa da Copycat',category:'casa',x:25,y:68,description:'Entregue uma Poké Doll para a Copycat.',npcs:['Copycat'],rewards:['TM08 Substitute']},
-      {id:'mr-psychic',name:'Casa do Mr. Psychic',category:'casa',x:78,y:70,description:'Moradia ao sudeste da cidade.',npcs:['Mr. Psychic'],rewards:['TM40 Psychic']},
-      {id:'station',name:'Estação ferroviária',category:'especial',x:19,y:34,description:'Estação sem uso durante a aventura.',npcs:['Funcionários']},
+    source: source('Saffron_City'),
+    trade: { npc: 'Psytrice', species: 'Raichu', level: 30 },
+    gifts: [
+      {
+        name: 'Lapras',
+        level: 34,
+        note: 'Funcionário dentro da Silph Co., durante o resgate da empresa.',
+      },
+      {
+        name: 'Porygon',
+        level: 34,
+        note: 'Funcionário na cidade, após a libertação da Silph Co.',
+      },
+      {
+        name: 'Hitmonlee',
+        level: 30,
+        note: 'Escolha entre Hitmonlee e Hitmonchan após vencer o Fighting Dojo. Você recebe somente um.',
+      },
+      {
+        name: 'Hitmonchan',
+        level: 30,
+        note: 'Alternativa a Hitmonlee no Fighting Dojo; não é um segundo presente.',
+      },
     ],
-    importantNpcs:['Psytrice — troca Raichu por Raichu de Alola','Presidente da Silph — Master Ball','Funcionário da Silph — Lapras'],
-    trade:{give:'Raichu',receive:'Raichu de Alola',level:30,npc:'Psytrice',location:'Centro Pokémon'},
-    water:{method:'Sem encontros',area:'Saffron City',pokemon:[],note:'Não há área aquática capturável dentro da cidade.'},
+    points: [
+      center([3007, 1308], ['Psytrice — troca de Alola']),
+      mart([3203, 1155]),
+      gym(
+        'Ginásio de Saffron',
+        'Entre com um Pokémon de nível 45 ou superior. Use os teleportadores para chegar a Sabrina.',
+        'Sabrina',
+        ['Marsh Badge', 'TM33 Calm Mind'],
+        [3200, 1065],
+      ),
+      p(
+        'dojo',
+        'Fighting Dojo',
+        'ginásio',
+        'Vença os treinadores e escolha um dos dois Pokémon de luta.',
+        ['Mestre do Dojo'],
+        ['Hitmonlee OU Hitmonchan, Nv. 30'],
+        [3147, 1070],
+      ),
+      p(
+        'silph',
+        'Silph Co.',
+        'acesso',
+        'Derrote a Equipe Rocket. O presidente entrega a Master Ball depois da libertação.',
+        ['Presidente', 'Giovanni', 'Funcionário de Lapras'],
+        ['Master Ball', 'Lapras, Nv. 34'],
+        [3087, 1210],
+        'silph-co',
+      ),
+      p(
+        'copycat',
+        'Casa de Copycat',
+        'casa',
+        'Mostre um Clefairy a Copycat. Não é necessário entregar Poké Doll nesta versão.',
+        ['Copycat'],
+        ['TM08 Substitute'],
+      ),
+      p(
+        'psychic',
+        'Casa de Mr. Psychic',
+        'casa',
+        'Converse com o morador para receber um TM Psíquico.',
+        ['Mr. Psychic'],
+        ['TM40 Psychic'],
+      ),
+      p(
+        'porygon',
+        'Funcionário na rua',
+        'externo',
+        'Retorne após libertar a Silph Co. para receber o Pokémon do funcionário.',
+        ['Funcionário da Silph'],
+        ['Porygon, Nv. 34'],
+      ),
+    ],
   },
   fuchsia: {
-    name:'Fuchsia City', image:'fuchsia.png', source, accessible:7, houses:2,
-    buildings:[
-      {id:'fuchsia-center',name:'Centro Pokémon',category:'serviço',x:32,y:65,description:'Troca repetível por Marowak de Alola.',npcs:['Enfermeira Joy','Genmar — troca Pokémon']},
-      {id:'fuchsia-mart',name:'Poké Mart',category:'serviço',x:18,y:55,description:'Loja a oeste do zoológico.',npcs:['Atendentes']},
-      {id:'fuchsia-gym',name:'Ginásio de Fuchsia',category:'ginásio',x:75,y:55,description:'Ginásio de tipo Veneno com paredes invisíveis.',npcs:['Koga'],rewards:['Soul Badge','TM27 Toxic']},
-      {id:'go-park',name:'GO Park Complex',category:'especial',x:52,y:22,description:'Transfere Pokémon de Pokémon GO para o jogo.',npcs:['Recepcionistas do GO Park']},
-      {id:'warden-house',name:'Casa do Diretor',category:'casa',x:74,y:76,description:'Devolva os Gold Teeth ao diretor.',npcs:['Diretor do GO Park'],rewards:['Safari Set','Strong Push']},
-      {id:'sea-skim',name:'Instrutor de Sea Skim',category:'especial',x:46,y:77,description:'Homem ao lado de Lapras ensina a técnica secreta.',npcs:['Instrutor de Sea Skim','Lapras'],rewards:['Sea Skim']},
-      {id:'fuchsia-house',name:'Casa nordeste',category:'casa',x:82,y:27,description:'Residência próxima ao portão da Rota 15.',npcs:['Moradores']},
+    source: source('Fuchsia_City'),
+    trade: { npc: 'Genmar', species: 'Marowak', level: 38 },
+    points: [
+      center([2414, 2687], ['Genmar — troca de Alola']),
+      mart([2394, 2596]),
+      gym(
+        'Ginásio de Fuchsia',
+        'Tenha 50 espécies registradas na Pokédex. Observe as paredes invisíveis e encontre Koga.',
+        'Koga',
+        ['Soul Badge', 'TM27 Toxic'],
+        [2244, 2680],
+      ),
+      p(
+        'go-park',
+        'GO Park Complex',
+        'serviço',
+        'Transfira Pokémon compatíveis de Pokémon GO. Os Pokémon no cenário do parque não equivalem a encontros selvagens na cidade.',
+        ['Recepcionistas do GO Park'],
+        [],
+        [2480, 2480],
+      ),
+      p(
+        'warden',
+        'Casa do Warden',
+        'casa',
+        'Entregue os Gold Teeth obtidos de Jessie e James na Rota 19. Depois de mover a pedra da casa, fale com Diglett.',
+        ['Warden', 'Diglett'],
+        ['Strong Push', 'Safari Set', 'Nugget diária'],
+      ),
+      p(
+        'sea-skim',
+        'Instrutor de Sea Skim',
+        'externo',
+        'Converse com o homem ao lado de Lapras e da prancha, na área externa da cidade.',
+        ['Instrutor com Lapras'],
+        ['Sea Skim'],
+      ),
+      p(
+        'neighbor',
+        'Casa vizinha ao Warden',
+        'casa',
+        'Residência ao lado da casa do diretor. Em Let’s Go não há vara de pesca para receber.',
+        ['Moradores'],
+      ),
+      p(
+        'old-deleter',
+        'Antiga casa do Move Deleter',
+        'casa',
+        'Nesta versão, a casa abriga um casal; não oferece o antigo serviço de apagar golpes.',
+        ['Casal'],
+      ),
     ],
-    importantNpcs:['Genmar — troca Marowak por Marowak de Alola','Instrutor — ensina Sea Skim','Diretor — ensina Strong Push'],
-    trade:{give:'Marowak',receive:'Marowak de Alola',level:38,npc:'Genmar',location:'Centro Pokémon'},
-    water:{method:'Sea Skim',area:'Lago ao sul do GO Park',pokemon:['Magikarp'],note:'Sea Skim é aprendido nesta cidade; os grandes encontros aquáticos ficam nas Rotas 19 e 20.'},
   },
   cinnabar: {
-    name:'Cinnabar Island', image:'cinnabar.png', source, accessible:6, houses:0,
-    buildings:[
-      {id:'cinnabar-center',name:'Centro Pokémon',category:'serviço',x:31,y:67,description:'Troca repetível por Grimer de Alola na versão Pikachu.',npcs:['Enfermeira Joy','Darko — troca Pokémon']},
-      {id:'cinnabar-mart',name:'Poké Mart',category:'serviço',x:55,y:67,description:'Loja ao sul da ilha.',npcs:['Atendentes']},
-      {id:'cinnabar-gym',name:'Ginásio de Cinnabar',category:'ginásio',x:78,y:62,description:'Quiz show de tipo Fogo; exige a Secret Key.',npcs:['Blaine'],rewards:['Volcano Badge','TM46 Fire Blast']},
-      {id:'pokemon-lab',name:'Laboratório Pokémon',category:'especial',x:28,y:27,description:'Ressuscita fósseis e o Old Amber.',npcs:['Cientista dos fósseis'],rewards:['Omanyte ou Kabuto','Aerodactyl']},
-      {id:'mansion',name:'Mansão Pokémon',category:'especial',x:72,y:28,description:'Masmorra em ruínas com pistas sobre Mewtwo.',npcs:['Coach Trainer Rita'],rewards:['Secret Key','TM22 Rock Slide']},
-      {id:'fossil-room',name:'Sala de pesquisa',category:'especial',x:42,y:29,description:'Setor interno do laboratório dedicado a fósseis.',npcs:['Pesquisadores']},
+    source: source('Cinnabar_Island'),
+    trade: { npc: 'Darko', species: 'Grimer', level: 44, version: 'Pikachu' },
+    gifts: [
+      {
+        name: 'Omanyte',
+        level: 44,
+        method: 'Fóssil',
+        note: 'Restaure Helix Fossil no Cinnabar Lab.',
+      },
+      {
+        name: 'Kabuto',
+        level: 44,
+        method: 'Fóssil',
+        note: 'Restaure Dome Fossil no Cinnabar Lab.',
+      },
+      {
+        name: 'Aerodactyl',
+        level: 44,
+        method: 'Fóssil',
+        note: 'Restaure Old Amber obtido no Museu de Pewter.',
+      },
     ],
-    importantNpcs:['Darko — troca Grimer por Grimer de Alola','Cientista — ressuscita fósseis','Blaine — Volcano Badge'],
-    trade:{give:'Grimer',receive:'Grimer de Alola',level:44,npc:'Darko',location:'Centro Pokémon'},
-    water:{method:'Sea Skim',area:'Rotas 20 e 21 ao redor da ilha',pokemon:['Tentacool','Tentacruel','Magikarp','Staryu','Starmie'],note:'Os encontros estão nas rotas marítimas adjacentes, não no solo da ilha.'},
+    points: [
+      center([1040, 3200], ['Darko — troca de Alola']),
+      mart([1120, 3210]),
+      gym(
+        'Ginásio de Cinnabar',
+        'Encontre a Secret Key na mansão para abrir a porta. Responda ao quiz de Blaine.',
+        'Blaine',
+        ['Volcano Badge', 'TM46 Fire Blast'],
+        [1130, 3090],
+      ),
+      p(
+        'lab',
+        'Cinnabar Lab',
+        'serviço',
+        'Entregue um fóssil ao pesquisador para restaurar um Pokémon. As salas internas pertencem ao mesmo laboratório, não são casas separadas.',
+        ['Pesquisador de fósseis', 'Cientistas'],
+        ['Restauração de fósseis'],
+        [923, 3195],
+      ),
+      p(
+        'mansion',
+        'Pokémon Mansion',
+        'acesso',
+        'Explore os diários sobre Mew e Mewtwo e procure a Secret Key no B1F.',
+        ['Pesquisadores', 'Treinadores'],
+        ['Secret Key'],
+        [947, 3070],
+        'pokemon-mansion',
+      ),
+    ],
+  },
+  indigo: {
+    source: source('Indigo_Plateau'),
+    trade: { npc: 'Exemann', species: 'Exeggutor', level: 46 },
+    points: [
+      center(undefined, ['Exemann — troca de Alola', 'Madame Memorial']),
+      mart(),
+      p(
+        'league',
+        'Liga Pokémon',
+        'acesso',
+        'Prepare itens de cura e uma equipe equilibrada antes da sequência de batalhas. Não é possível sair entre os membros para usar o Centro.',
+        ['Lorelei', 'Bruno', 'Agatha', 'Lance', 'Trace'],
+        ['Título de Campeão'],
+        [561, 425],
+      ),
+      p(
+        'reminder',
+        'Madame Memorial',
+        'npc',
+        'Dentro do Centro Pokémon, ensina novamente golpes em troca de Heart Scales.',
+        ['Madame Memorial'],
+        ['Relembrar golpes'],
+      ),
+    ],
   },
 };

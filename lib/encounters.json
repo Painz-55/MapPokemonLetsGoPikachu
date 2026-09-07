@@ -1,0 +1,3746 @@
+{
+  "route1": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Potion",
+        "note": "Recebida do atendente após entregar Parcel a Oak."
+      },
+      {
+        "name": "Razz Berry",
+        "note": "Arbusto no nordeste da rota."
+      }
+    ],
+    "connections": [
+      "Norte: Viridian City",
+      "Sul: Pallet Town"
+    ],
+    "note": "Liga Pallet a Viridian. O encontro inicial com o parceiro é um evento da história e não integra a tabela selvagem comum. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route1.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route1.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route2": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Caterpie",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Weedle",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Leaf Stone",
+        "note": "Área leste, acessível com Chop Down."
+      },
+      {
+        "name": "Great Ball ×3",
+        "note": "Atrás da entrada de Diglett’s Cave."
+      },
+      {
+        "name": "Light Up",
+        "note": "Técnica secreta ensinada pelo assistente de Oak na casa da parte leste."
+      }
+    ],
+    "connections": [
+      "Norte: Pewter City",
+      "Sul: Viridian City",
+      "Acesso: Viridian Forest, Diglett's Cave"
+    ],
+    "note": "A floresta divide a rota; a faixa leste contém a casa do assistente de Oak e a entrada de Diglett’s Cave. Chop Down abre os atalhos. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route2.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route2.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "route3": {
+    "encounters": [
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Sandshrew",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Mankey",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Ekans",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Charmander",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Revive",
+        "note": "Recompensa por vencer Coach Trainer Kareem."
+      },
+      {
+        "name": "Lure",
+        "note": "Arbusto próximo a Picnicker Robin."
+      },
+      {
+        "name": "Revive",
+        "note": "Na grama ao sul do Centro Pokémon próximo a Mt. Moon."
+      }
+    ],
+    "connections": [
+      "Norte: Route 4",
+      "Oeste: Pewter City"
+    ],
+    "note": "Liga Pewter ao setor oeste da Rota 4. Charmander é aparição selvagem especial, separada do presente da Rota 24. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route3.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route3.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route4": {
+    "encounters": [
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Sandshrew",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Mankey",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Ekans",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Charmander",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM57 Pay Day",
+        "note": "Vença Coach Trainer Oberon."
+      },
+      {
+        "name": "Escape Rope",
+        "note": "Perto do Hiker junto ao Centro Pokémon."
+      },
+      {
+        "name": "PP Max",
+        "note": "No desnível acessível pelo lado de Cerulean com Sea Skim."
+      }
+    ],
+    "connections": [
+      "Sul: Route 3",
+      "Leste: Cerulean City",
+      "Acesso: Mt. Moon"
+    ],
+    "note": "Reúne os setores a oeste e a leste de Mt. Moon. No Centro Pokémon oeste há compra única de Magikarp nível 5 por ₽500. A água fica no setor ligado a Cerulean. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route4.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route4.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.serebii.net/letsgopikachueevee/gift.shtml"
+    ]
+  },
+  "route5": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Growlithe",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Jigglypuff",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Abra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Vulpix",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Revive ×3",
+        "note": "Recebidos de Trace junto à entrada do Underground Path."
+      },
+      {
+        "name": "Ether",
+        "note": "Perto do portão ao sul."
+      },
+      {
+        "name": "Great Ball ×3",
+        "note": "Na área cercada com grama no centro."
+      }
+    ],
+    "connections": [
+      "Norte: Cerulean City",
+      "Sul: Saffron City",
+      "Acesso: Underground Path 5-6"
+    ],
+    "note": "Contém o Day Care e a passagem subterrânea para a Rota 6. O portão de Saffron exige Tea. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route5.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route5.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route6": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Growlithe",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Jigglypuff",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Abra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Vulpix",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Goldeen",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Seaking",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Super Potion",
+        "note": "À esquerda do portão de Saffron."
+      },
+      {
+        "name": "Guard Spec.",
+        "note": "Atrás do Gentleman."
+      },
+      {
+        "name": "Paralyze Heal",
+        "note": "No sudoeste da rota."
+      }
+    ],
+    "connections": [
+      "Norte: Saffron City",
+      "Sul: Vermilion City",
+      "Acesso: Underground Path 5-6"
+    ],
+    "note": "Liga Vermilion ao portão sul de Saffron; a passagem subterrânea retorna à Rota 5. No lago, Goldeen e Seaking são capturas com Sea Skim. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route6.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route6.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route7": {
+    "encounters": [
+      {
+        "name": "Growlithe",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Jigglypuff",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Abra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Arcanine",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Kadabra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Vulpix",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Ninetales",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Porygon",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM12 Facade",
+        "note": "Vença Coach Trainer Alpesh."
+      },
+      {
+        "name": "Elixir",
+        "note": "Abaixo do portão de Saffron."
+      }
+    ],
+    "connections": [
+      "Leste: Saffron City",
+      "Oeste: Celadon City",
+      "Acesso: Underground Path 7-8"
+    ],
+    "note": "Liga Celadon a Saffron e ao Underground Path para a Rota 8. Porygon selvagem é especial; o presente de Porygon fica em Saffron. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route7.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route7.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route8": {
+    "encounters": [
+      {
+        "name": "Growlithe",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Jigglypuff",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Abra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Arcanine",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Kadabra",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Vulpix",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Ninetales",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Fire Stone",
+        "note": "Centro da área de grama; exige Chop Down."
+      },
+      {
+        "name": "Big Mushroom",
+        "note": "Abaixo da borda próxima à entrada do Underground Path."
+      },
+      {
+        "name": "X Speed",
+        "note": "A oeste de Super Nerd Aidan, junto ao arbusto."
+      }
+    ],
+    "connections": [
+      "Leste: Lavender Town",
+      "Oeste: Saffron City",
+      "Acesso: Underground Path 7-8"
+    ],
+    "note": "Liga Lavender ao portão leste de Saffron e ao Underground Path para a Rota 7. A área central de grama exige Chop Down. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route8.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route8.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route9": {
+    "encounters": [
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♀",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♂",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidorina",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidorino",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Super Potion",
+        "note": "A oeste de Hiker Jeremy."
+      },
+      {
+        "name": "Ether",
+        "note": "Perto de Bug Catcher Conner."
+      },
+      {
+        "name": "Pinap Berry ×5",
+        "note": "Escondidas atrás da árvore junto ao Hiker."
+      }
+    ],
+    "connections": [
+      "Leste: Route 10",
+      "Oeste: Cerulean City"
+    ],
+    "note": "Sai de Cerulean em direção à Rota 10; Chop Down remove a árvore que bloqueia o caminho. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route9.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route9.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route10": {
+    "encounters": [
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♀",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♂",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Krabby",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidorina",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidorino",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dratini",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonair",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM13 Brick Break",
+        "note": "Vença Coach Trainer Tasha."
+      },
+      {
+        "name": "Thunder Stone",
+        "note": "Próxima à Power Plant; acesso pelo rio com Sea Skim."
+      },
+      {
+        "name": "Super Potion",
+        "note": "Junto à área de grama."
+      }
+    ],
+    "connections": [
+      "Sul: Lavender Town",
+      "Oeste: Route 9",
+      "Acesso: Rock Tunnel, Power Plant"
+    ],
+    "note": "Os setores norte e sul são ligados pelo Rock Tunnel. Sea Skim dá acesso ao rio de Dratini/Dragonair e à Power Plant. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route10.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route10.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route11": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Drowzee",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Mr. Mime",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Horsea",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Seadra",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Função Judge",
+        "note": "Assistente de Oak no andar superior do portão; exige 30 espécies capturadas."
+      },
+      {
+        "name": "Pikachu Candy ×5",
+        "note": "Na versão Pikachu, vença Coach Trainer Will."
+      },
+      {
+        "name": "Super Repel",
+        "note": "No nordeste da rota."
+      }
+    ],
+    "connections": [
+      "Leste: Route 12",
+      "Oeste: Vermilion City",
+      "Acesso: Diglett's Cave"
+    ],
+    "note": "Liga Vermilion à Rota 12 e dá acesso a Diglett’s Cave. A passagem adiante é afetada pelo Snorlax da Rota 12. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route11.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route11.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/",
+      "https://bulbapedia.bulbagarden.net/wiki/Stats_Judge"
+    ]
+  },
+  "route12": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Gloom",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Krabby",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Farfetch'd",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Kingler",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weepinbell",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Horsea",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Seadra",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Snorlax",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM50 Roost",
+        "note": "Garota no andar superior do portão da Rota 12."
+      },
+      {
+        "name": "TM24 X-Scissor",
+        "note": "Pequena ilha ao sul do portão; exige Sea Skim."
+      },
+      {
+        "name": "TM32 Dazzling Gleam",
+        "note": "Mr. Dazzling, na casa ao sul do Snorlax."
+      },
+      {
+        "name": "Water Stone",
+        "note": "Próxima a Rocker Luca; exige Chop Down."
+      },
+      {
+        "name": "TM59 Dream Eater",
+        "note": "Vença Coach Trainer Priya."
+      }
+    ],
+    "connections": [
+      "Norte: Lavender Town",
+      "Sul: Route 13",
+      "Oeste: Route 11"
+    ],
+    "note": "Snorlax é encontro fixo: use Poké Flute e vença a batalha antes da captura. A casa ao sul dá uma TM; LGPE não possui pesca. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route12.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route12.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route13": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Gloom",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Krabby",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Farfetch'd",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Kingler",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weepinbell",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Horsea",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Seadra",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "PP Up",
+        "note": "À direita do Ace Trainer; exige Chop Down."
+      },
+      {
+        "name": "Full Heal",
+        "note": "Próximo a Camper Perry."
+      },
+      {
+        "name": "Golden Pinap Berry",
+        "note": "Escondida a sudoeste de Picnicker Gwen."
+      }
+    ],
+    "connections": [
+      "Norte: Route 12",
+      "Oeste: Route 14"
+    ],
+    "note": "Percurso costeiro entre Rotas 12 e 14, com cercas e treinadores. A água tem tabela própria de encontros. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route13.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route13.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route14": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Gloom",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Venonat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Venomoth",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tauros",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Scyther",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weepinbell",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Pinsir",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Nugget",
+        "note": "Ao norte de Roughneck Zeek."
+      },
+      {
+        "name": "Hyper Potion",
+        "note": "Atrás de Bird Keeper Benny, junto ao arbusto."
+      },
+      {
+        "name": "Golden Razz Berry",
+        "note": "Escondida na área de grama."
+      }
+    ],
+    "connections": [
+      "Leste: Route 13",
+      "Oeste: Route 15"
+    ],
+    "note": "Conecta as Rotas 13 e 15. Scyther aparece na tabela de Pikachu; Pinsir é a alternativa de Eevee. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route14.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route14.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route15": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Gloom",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Venonat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Venomoth",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tauros",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Scyther",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weepinbell",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Pinsir",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM31 Fire Punch",
+        "note": "Vença Coach Trainer Midge; acesso com Chop Down."
+      },
+      {
+        "name": "TM47 Surf",
+        "note": "Extremo noroeste; acesso com Chop Down."
+      },
+      {
+        "name": "Assistant Set",
+        "note": "Assistente de Oak no portão: 50 espécies capturadas."
+      }
+    ],
+    "connections": [
+      "Leste: Route 14",
+      "Oeste: Fuchsia City"
+    ],
+    "note": "Leva a Fuchsia. Chop Down abre o trecho superior com itens e Coach Trainer. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route15.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route15.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "route16": {
+    "encounters": [
+      {
+        "name": "Doduo",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dodrio",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Snorlax",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM14 Fly",
+        "note": "Garota na casa ao norte; exige Chop Down."
+      },
+      {
+        "name": "PP Up",
+        "note": "Na grama ao norte; exige Chop Down."
+      },
+      {
+        "name": "Ultra Ball ×30",
+        "note": "Assistente de Oak no portão: 40 espécies capturadas."
+      }
+    ],
+    "connections": [
+      "Sul: Route 17",
+      "Leste: Celadon City"
+    ],
+    "note": "Snorlax bloqueia a passagem para Pokémon Road: use Poké Flute e vença a batalha antes de capturá-lo. A casa ao norte ensina o golpe Fly, não Sky Dash. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route16.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route16.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "route17": {
+    "encounters": [
+      {
+        "name": "Ponyta",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Doduo",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dodrio",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rapidash",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Eevee",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM58 Drill Run",
+        "note": "Vença Coach Trainer Grantley."
+      },
+      {
+        "name": "Rare Candy",
+        "note": "Na grama ao sul de Coach Trainer Grantley."
+      },
+      {
+        "name": "Nugget",
+        "note": "Entre flores amarelas ao norte de Beauty Samantha."
+      },
+      {
+        "name": "Super Lure",
+        "note": "Na área de grama mais ao norte."
+      }
+    ],
+    "connections": [
+      "Norte: Route 16",
+      "Sul: Route 18"
+    ],
+    "note": "Pokémon Road substitui Cycling Road; não exige bicicleta. Eevee selvagem aparece nas duas versões. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route17.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route17.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route18": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Doduo",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dodrio",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Staryu",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Starmie",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Elixir",
+        "note": "Próximo a Bird Keeper Jacob."
+      },
+      {
+        "name": "Silver Razz Berry ×3",
+        "note": "Escondidas entre flores amarelas junto à entrada da Rota 17."
+      }
+    ],
+    "connections": [
+      "Norte: Route 17",
+      "Leste: Fuchsia City"
+    ],
+    "note": "Conecta o fim da Pokémon Road a Fuchsia. Staryu e Starmie aparecem na água; não são presentes da cidade. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route18.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route18.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route19": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Staryu",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Starmie",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Lapras",
+        "method": "Especial na água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Full Heal",
+        "note": "Abaixo do desnível junto à entrada norte."
+      },
+      {
+        "name": "Revive",
+        "note": "Escondido nas rochas isoladas no mar."
+      }
+    ],
+    "connections": [
+      "Norte: Fuchsia City",
+      "Oeste: Route 20"
+    ],
+    "note": "Rota marítima ao sul de Fuchsia; exige Sea Skim. Lapras é uma aparição especial na água. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route19.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route19.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route20": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Gyarados",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Lapras",
+        "method": "Especial na água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Heart Scale",
+        "note": "Próxima a Picnicker Irene, no setor oeste."
+      },
+      {
+        "name": "Max Repel",
+        "note": "Na ilha ao norte de Beauty Nora."
+      }
+    ],
+    "connections": [
+      "Leste: Route 19",
+      "Oeste: Cinnabar Island",
+      "Acesso: Seafoam Islands"
+    ],
+    "note": "Atravessa os lados leste e oeste de Seafoam Islands. Sea Skim é necessário; a caverna contém o caminho entre os dois setores. Lapras é especial na água. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route20.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route20.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route21": {
+    "encounters": [
+      {
+        "name": "Pidgeotto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tangela",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Gloom",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Vileplume",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Weepinbell",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Victreebel",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Staryu",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Starmie",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM35 Ice Punch",
+        "note": "Vença Coach Trainer Pam."
+      },
+      {
+        "name": "Water Stone",
+        "note": "Próxima a Fisherman Nolan."
+      },
+      {
+        "name": "PP Up",
+        "note": "Pequena ilha perto de Cinnabar."
+      }
+    ],
+    "connections": [
+      "Norte: Pallet Town",
+      "Sul: Cinnabar Island"
+    ],
+    "note": "Liga Cinnabar a Pallet por mar. A grama ao sul de Pallet contém Tangela; a água contém Staryu e Starmie. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route21.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route21.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route22": {
+    "encounters": [
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♀",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♂",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwag",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwhirl",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Antidote",
+        "note": "Escondido em um arbusto no nordeste da rota."
+      }
+    ],
+    "connections": [
+      "Norte: Route 23",
+      "Leste: Viridian City"
+    ],
+    "note": "Liga Viridian à entrada da Liga. A lagoa oferece Poliwag, Poliwhirl e Magikarp por Sea Skim. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route22.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route22.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route23": {
+    "encounters": [
+      {
+        "name": "Nidorina",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidorino",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Exeggcute",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♀",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoran♂",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoqueen",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Nidoking",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Exeggutor",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Spearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Fearow",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwag",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwhirl",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Golden Nanab Berry ×5",
+        "note": "Depois da verificação da Thunder Badge."
+      },
+      {
+        "name": "Golden Pinap Berry ×5",
+        "note": "Canto noroeste após a verificação da Rainbow Badge."
+      },
+      {
+        "name": "Golden Razz Berry ×5",
+        "note": "Ilhota após a verificação da Soul Badge; exige Sea Skim."
+      }
+    ],
+    "connections": [
+      "Norte: Indigo Plateau",
+      "Sul: Route 22",
+      "Oeste: Victory Road"
+    ],
+    "note": "Guardas verificam as oito insígnias ao longo do caminho. Sea Skim atravessa o trecho aquático; Victory Road faz parte do acesso ao Indigo Plateau. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route23.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route23.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE"
+    ]
+  },
+  "route24": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Venonat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Meowth",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Squirtle",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Nugget",
+        "note": "Complete as cinco batalhas da Nugget Bridge."
+      },
+      {
+        "name": "Razz Berry ×3",
+        "note": "Ao sul de Camper Shane."
+      }
+    ],
+    "connections": [
+      "Sul: Cerulean City",
+      "Leste: Route 25"
+    ],
+    "note": "A Nugget Bridge conecta Cerulean à área norte. O homem ao norte dá Charmander nível 14 após 50 capturas totais; Squirtle é o encontro selvagem especial. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route24.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route24.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/",
+      "https://www.serebii.net/letsgopikachueevee/gift.shtml"
+    ]
+  },
+  "route25": {
+    "encounters": [
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Venonat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Meowth",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Squirtle",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeotto",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgeot",
+        "method": "Céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dragonite",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charizard",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Especial no céu (pós-Liga)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwag",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwhirl",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "S.S. Ticket",
+        "note": "Bill entrega as passagens depois de você desfazer o experimento em sua casa."
+      },
+      {
+        "name": "TM15 Seismic Toss",
+        "note": "Vença Coach Trainer Amala."
+      },
+      {
+        "name": "TM16 Thunder Wave",
+        "note": "Atrás da árvore cortável perto do fim da rota; Chop Down permite o acesso."
+      }
+    ],
+    "connections": [
+      "Oeste: Route 24"
+    ],
+    "note": "No extremo leste fica a casa de Bill. Squirtle é selvagem especial; o presente de Squirtle é obtido com Jenny em Vermilion. Voo alto é liberado após a Liga. Aves lendárias no céu exigem também capturar as três aves nos encontros fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/route25.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/route25.shtml",
+      "https://www.serebii.net/letsgopikachueevee/sky.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/LPLE",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "viridianforest": {
+    "encounters": [
+      {
+        "name": "Caterpie",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Weedle",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Pidgey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Metapod",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Kakuna",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Oddish",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Pikachu",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Butterfree",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Bellsprout",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Beedrill",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Bulbasaur",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Lure",
+        "note": "Clareira no noroeste."
+      },
+      {
+        "name": "Antidote",
+        "note": "Perto da placa ao norte da entrada."
+      },
+      {
+        "name": "Potion",
+        "note": "Escondida atrás de uma árvore no nordeste."
+      }
+    ],
+    "connections": [
+      "Norte: Route 2",
+      "Sul: Route 2"
+    ],
+    "note": "Travessia entre os setores da Rota 2. Bulbasaur é aparição especial; Pikachu da floresta é um Pokémon selvagem comum, diferente do parceiro.",
+    "source": "https://www.serebii.net/pokearth/kanto/viridianforest.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/viridianforest.shtml"
+    ]
+  },
+  "mtmoon": {
+    "encounters": [
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Geodude",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Paras",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Clefairy",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Onix",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Clefable",
+        "method": "Solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Helix Fossil ou Dome Fossil",
+        "note": "Escolha um após vencer Super Nerd Miguel; restaure-o no laboratório de Cinnabar."
+      },
+      {
+        "name": "Moon Stone",
+        "note": "Escondida em crateras; reaparece diariamente."
+      },
+      {
+        "name": "Rare Candy",
+        "note": "A leste de um Rocket Grunt."
+      },
+      {
+        "name": "Nugget",
+        "note": "Na área central sem treinadores."
+      }
+    ],
+    "connections": [
+      "Leste: Route 4",
+      "Oeste: Route 4"
+    ],
+    "note": "Tabelas consolidadas dos andares. Ambas as entradas desembocam em setores da Rota 4. Escolhe-se apenas um dos dois fósseis no evento inicial.",
+    "source": "https://www.serebii.net/pokearth/kanto/mt.moon.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/mt.moon.shtml"
+    ]
+  },
+  "rocktunnel": {
+    "encounters": [
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Geodude",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Golbat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Machop",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Graveler",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Onix",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rhyhorn",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Cubone",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Kangaskhan",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Charmander",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Escape Rope",
+        "note": "A sudeste de Hiker Claus."
+      },
+      {
+        "name": "Revive",
+        "note": "No extremo sudoeste."
+      },
+      {
+        "name": "Full Heal",
+        "note": "A sudeste de Poké Maniac Cooper."
+      }
+    ],
+    "connections": [
+      "Norte: Route 10",
+      "Sul: Route 10"
+    ],
+    "note": "Tabelas consolidadas dos andares entre as duas partes da Rota 10. Light Up ilumina a caverna. Charmander é aparição especial.",
+    "source": "https://www.serebii.net/pokearth/kanto/rocktunnel.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/rocktunnel.shtml"
+    ]
+  },
+  "diglettscave": {
+    "encounters": [
+      {
+        "name": "Diglett",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dugtrio",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [],
+    "connections": [
+      "Norte: Route 2",
+      "Sul: Route 11"
+    ],
+    "note": "Liga a Rota 11 à faixa leste da Rota 2. Atravessar o túnel fica bloqueado até obter Thunder Badge ou atravessar Rock Tunnel. Não há itens de chão listados na tabela LGPE consultada.",
+    "source": "https://www.serebii.net/pokearth/kanto/diglett%27scave.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/diglett%27scave.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/Diglett_cave"
+    ]
+  },
+  "powerplant": {
+    "encounters": [
+      {
+        "name": "Grimer",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Magnemite",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Voltorb",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Electabuzz",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magneton",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Muk",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Electrode",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Koffing",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weezing",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Electrode",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zapdos",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM38 Thunder",
+        "note": "Setor sul, junto aos sacos de areia e tambores."
+      },
+      {
+        "name": "Thunder Stone",
+        "note": "Setor nordeste, junto aos sacos de areia."
+      },
+      {
+        "name": "Rare Candy ×5",
+        "note": "Vença Coach Trainer Mable."
+      },
+      {
+        "name": "Max Revive",
+        "note": "Junto aos sacos de areia próximos à entrada."
+      }
+    ],
+    "connections": [
+      "Sul: Route 10",
+      "Leste: Route 10"
+    ],
+    "note": "Acesso pelo rio da Rota 10 com Sea Skim. Zapdos é encontro fixo nível 50; vença a batalha antes da captura. Alguns objetos no chão são Electrodes fixos.",
+    "source": "https://www.serebii.net/pokearth/kanto/powerplant.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/powerplant.shtml",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "seafoamislands": {
+    "encounters": [
+      {
+        "name": "Golbat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Slowpoke",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Seel",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Jynx",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Slowbro",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Dewgong",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Squirtle",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacool",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Shellder",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Tentacruel",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Cloyster",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Articuno",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM55 Ice Beam",
+        "note": "Canto sul da área B2F."
+      },
+      {
+        "name": "Ice Stone",
+        "note": "B2F, próxima às escadas pelo caminho da entrada oeste."
+      },
+      {
+        "name": "Heart Scale",
+        "note": "Escondidas em rochas nos subsolos."
+      },
+      {
+        "name": "Rare Candy ×5",
+        "note": "Recompensa de Coach Trainer Yas."
+      }
+    ],
+    "connections": [
+      "Leste: Route 20",
+      "Oeste: Route 20"
+    ],
+    "note": "Tabelas consolidadas dos andares. Sea Skim e Strong Push permitem controlar correntes e alcançar Articuno, encontro fixo nível 50 no B4F.",
+    "source": "https://www.serebii.net/pokearth/kanto/seafoamislands.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/seafoamislands.shtml",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "victoryroad": {
+    "encounters": [
+      {
+        "name": "Golbat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Machoke",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Graveler",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Machop",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Geodude",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Onix",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rhyhorn",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rhydon",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Hitmonlee",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Moltres",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Hitmonchan",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM56 Stealth Rock",
+        "note": "1F, área atrás de uma pedra de Strong Push."
+      },
+      {
+        "name": "TM45 Solar Beam",
+        "note": "2F, a sudoeste de Black Belt Daisuke."
+      },
+      {
+        "name": "TM49 Superpower",
+        "note": "2F, a sudeste de Juggler Gregory."
+      },
+      {
+        "name": "TM51 Blizzard",
+        "note": "3F, ao sul de Officer Jenny."
+      },
+      {
+        "name": "TM39 Outrage",
+        "note": "Vença Coach Trainer Ryan."
+      }
+    ],
+    "connections": [
+      "Norte: Route 23",
+      "Sul: Route 23"
+    ],
+    "note": "Tabelas consolidadas dos andares. Exige as oito insígnias e Strong Push. Moltres é encontro fixo nível 50; Hitmonlee e Hitmonchan são aparições especiais em partes da caverna.",
+    "source": "https://www.serebii.net/pokearth/kanto/victoryroad.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/victoryroad.shtml"
+    ]
+  },
+  "ceruleancave": {
+    "encounters": [
+      {
+        "name": "Golbat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Golduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Graveler",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Geodude",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Lickitung",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rhyhorn",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Ditto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Rhydon",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Psyduck",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Snorlax",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwag",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magikarp",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwhirl",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Poliwrath",
+        "method": "Água (Sea Skim)",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Mewtwo",
+        "method": "Encontro fixo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Mewtwonite X e Y",
+        "note": "Vença Green na caverna, depois de capturar Mewtwo."
+      },
+      {
+        "name": "Helix Fossil / Dome Fossil / Old Amber",
+        "note": "Podem surgir nos pontos escondidos que se renovam; não são três itens garantidos por visita."
+      },
+      {
+        "name": "Master Ball",
+        "note": "Possível achado raro em ponto brilhante que se renova; não é garantido."
+      },
+      {
+        "name": "Rare Candy",
+        "note": "Há unidades espalhadas pelos andares."
+      }
+    ],
+    "connections": [
+      "Sul: Cerulean City"
+    ],
+    "note": "Acesso após se tornar Campeão, usando Sea Skim. Tabelas consolidadas dos andares; Chansey é encontro comum no 2F. Mewtwo é fixo nível 70 no B1F; Snorlax é especial.",
+    "source": "https://www.serebii.net/pokearth/kanto/ceruleancave.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/ceruleancave.shtml"
+    ]
+  },
+  "pokemonmansion": {
+    "encounters": [
+      {
+        "name": "Grimer",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Rattata",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Raticate",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Magmar",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Muk",
+        "method": "Solo",
+        "version": "Pikachu"
+      },
+      {
+        "name": "Ditto",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Koffing",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Weezing",
+        "method": "Solo",
+        "version": "Eevee"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "Secret Key",
+        "note": "No B1F, na sala ao sul da máquina de clonagem; abre o ginásio de Cinnabar."
+      },
+      {
+        "name": "TM22 Rock Slide",
+        "note": "Vença Coach Trainer Rita."
+      },
+      {
+        "name": "TM21 Foul Play",
+        "note": "3F, sala nordeste junto ao buraco."
+      },
+      {
+        "name": "TM52 Sludge Bomb",
+        "note": "B1F, sala central ao sul."
+      },
+      {
+        "name": "Fire Stone",
+        "note": "1F, ao sul de Scientist Ted, atrás das plantas secas."
+      }
+    ],
+    "connections": [
+      "Sul: Cinnabar Island"
+    ],
+    "note": "Tabelas consolidadas dos andares. Acione interruptores das estátuas para mudar as portas e alcançar a Secret Key no B1F.",
+    "source": "https://www.serebii.net/pokearth/kanto/pokemonmansion.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/pokemonmansion.shtml",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  },
+  "pokemontower": {
+    "encounters": [
+      {
+        "name": "Gastly",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Cubone",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Zubat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Golbat",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Haunter",
+        "method": "Solo",
+        "version": "Ambas"
+      },
+      {
+        "name": "Chansey",
+        "method": "Especial no solo",
+        "version": "Ambas"
+      }
+    ],
+    "items": [
+      {
+        "name": "TM04 Teleport",
+        "note": "4F, perto de Channeler Jody."
+      },
+      {
+        "name": "Ice Stone",
+        "note": "5F, canto sudoeste além da área purificada."
+      },
+      {
+        "name": "Rare Candy",
+        "note": "Além do fantasma de Marowak."
+      },
+      {
+        "name": "Formal Set",
+        "note": "Recebido da senhora na entrada da torre."
+      }
+    ],
+    "connections": [
+      "Sul: Lavender Town"
+    ],
+    "note": "Tabelas consolidadas dos andares. Silph Scope permite identificar/capturar os fantasmas. O fantasma da mãe de Cubone é evento da história e não pode ser capturado; Mr. Fuji entrega Poké Flute depois, em sua casa.",
+    "source": "https://www.serebii.net/pokearth/kanto/pokemontower.shtml",
+    "sources": [
+      "https://www.serebii.net/pokearth/kanto/pokemontower.shtml",
+      "https://www.pokemythology.net/detonados/detonado-lets-go-pikachu-lets-go-eevee/"
+    ]
+  }
+}

@@ -13,8 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Atlas de Kanto | Pokémon Let\'s Go, Pikachu!',
-  description: 'Atlas navegável de Kanto com mapas de cidades, NPCs, trocas, encontros, itens e covis lendários.',
+  title: "Atlas de Kanto | Pokémon Let's Go, Pikachu!",
+  description:
+    'Atlas navegável de Kanto com mapas de cidades, NPCs, trocas, encontros, itens e covis lendários.',
+  icons: { icon: (process.env.NEXT_PUBLIC_BASE_PATH ?? '') + '/favicon.svg' },
 };
 
 export default function RootLayout({
@@ -28,6 +30,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <noscript>
+          <p
+            style={{ padding: '20px', background: '#ffda57', color: '#173a43' }}
+          >
+            Ative o JavaScript para usar o mapa interativo, os filtros e os
+            guias das cidades.
+          </p>
+        </noscript>
       </body>
     </html>
   );
