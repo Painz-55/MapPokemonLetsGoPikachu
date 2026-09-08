@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowUpRight,
   BookOpen,
@@ -20,6 +20,12 @@ import {
   DialogDescription,
   DialogClose,
 } from '@/components/ui/dialog';
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTitle,
+} from '@/components/ui/sheet';
 import { PlaceGuide } from '@/components/place-guide';
 import { PokemonIcon } from '@/components/pokemon-icon';
 import { cityData } from '@/lib/city-data';
@@ -38,31 +44,56 @@ export default function AtlasPage() {
   const [filter, setFilter] = useState('all');
   const [sources, setSources] = useState(false);
   const [mobileList, setMobileList] = useState(false);
-  const [detailTab, setDetailTab] = useState('overview');
-  const guideRef = useRef<HTMLElement>(null);
+  const [detailTab, setDetailTab] = useState('pokemon');
+  const [guideOpen, setGuideOpen] = useState(false);
+  const guideRef = useRef<HTMLDivElement>(null);
+  const guideButtonRef = useRef<HTMLButtonElement>(null);
+  const previousRoute = useRef(route);
+  const applyRoute = useCallback(
+    (next: { id: string; floor: string; poi: string }) => {
+      // A floor change reveals the map. Explicit POIs open their city details.
+      if (next.id === previousRoute.current.id && next.floor && !next.poi) {
+        setGuideOpen(false);
+      } else {
+        setDetailTab(next.poi ? 'overview' : 'pokemon');
+        setGuideOpen(!!next.id);
+      }
+      previousRoute.current = next;
+      setRoute(next);
+    },
+    [],
+  );
   useEffect(() => {
     const read = () => {
       const [id, params] = window.location.hash.slice(1).split('?');
       const search = new URLSearchParams(params);
-      setDetailTab('overview');
-      setRoute({
+      const next = {
         id: placeById[id] ? id : '',
         floor: search.get('floor') ?? '',
         poi: search.get('poi') ?? '',
-      });
+      };
+      const previous = previousRoute.current;
+      // go() already applied this route; do not reopen/reset on its hash event.
+      if (
+        next.id !== previous.id ||
+        next.floor !== previous.floor ||
+        next.poi !== previous.poi
+      ) {
+        applyRoute(next);
+      }
     };
     read();
     window.addEventListener('hashchange', read);
     return () => window.removeEventListener('hashchange', read);
-  }, []);
+  }, [applyRoute]);
   const go = (id = '', floor = '', poi = '') => {
     const params = new URLSearchParams();
     if (floor) params.set('floor', floor);
     if (poi) params.set('poi', poi);
+    applyRoute({ id, floor, poi });
     window.location.assign(
       '#' + id + (params.size ? '?' + params.toString() : ''),
     );
-    setDetailTab('overview');
     setMobileList(false);
   };
   const selected = placeById[route.id];
@@ -71,7 +102,7 @@ export default function AtlasPage() {
     document.title =
       (selected?.name ? selected.name + ' · ' : '') +
       'Atlas de Kanto | Let’s Go, Pikachu!';
-  }, [route.id, route.poi, selected?.name]);
+  }, [route.id, route.poi, selected?.name, guideOpen]);
   const results = useMemo(
     () =>
       places.filter((p) => {
@@ -186,7 +217,13 @@ export default function AtlasPage() {
           </p>
         )}
       </nav>
-      <button className="source-button" onClick={() => setSources(true)}>
+      <button
+        className="source-button"
+        onClick={() => {
+          setGuideOpen(false);
+          setSources(true);
+        }}
+      >
         <BookOpen size={17} /> Fontes & sobre o atlas <ArrowUpRight size={16} />
       </button>
     </div>
@@ -213,7 +250,13 @@ export default function AtlasPage() {
           <span className="edition-dot" /> LET’S GO, PIKACHU!
           <span className="edition-platform">Nintendo Switch</span>
         </div>
-        <button className="mobile-explore" onClick={() => setMobileList(true)}>
+        <button
+          className="mobile-explore"
+          onClick={() => {
+            setGuideOpen(false);
+            setMobileList(true);
+          }}
+        >
           <Search size={18} /> Explorar
         </button>
         <a
@@ -241,9 +284,20 @@ export default function AtlasPage() {
           </div>
           <div className="heading-line">
             <h1>{selected?.name ?? 'Uma região. Muitas descobertas.'}</h1>
-            <span className="map-status">
-              <span /> Mapas do jogo
-            </span>
+            <button
+              ref={guideButtonRef}
+              className="open-guide-button"
+              aria-haspopup="dialog"
+              aria-expanded={guideOpen}
+              aria-controls={guideOpen ? 'place-guide' : undefined}
+              onClick={() => {
+                setDetailTab('pokemon');
+                setGuideOpen(true);
+              }}
+            >
+              <BookOpen size={18} />
+              <span>{selected ? 'Pokémon e guia' : 'Guia de campo'}</span>
+            </button>
           </div>
         </div>
         <AtlasMap
@@ -254,80 +308,106 @@ export default function AtlasPage() {
           onNavigate={go}
         />
       </main>
-      <aside ref={guideRef} className="guide-panel" aria-label="Guia do local">
-        {selected ? (
-          <PlaceGuide
-            key={selected.id}
-            place={selected}
-            poi={route.poi}
-            tab={detailTab}
-            onTabChange={setDetailTab}
-            onNavigate={go}
-          />
-        ) : (
-          <>
-            <div className="detail-intro">
-              <span className="eyebrow">SEU GUIA DE CAMPO</span>
-              <h2>Para onde vamos?</h2>
-              <p>
-                Selecione uma cidade, siga uma rota ou entre em uma caverna. Seu
-                próximo encontro está no mapa.
-              </p>
-            </div>
-            <div className="home-guide">
-              <div className="section-label">
-                <Sparkles size={17} />
-                <h3>Encontros lendários</h3>
-                <span>04</span>
-              </div>
-              {places
-                .filter((p) => p.legendary)
-                .map((p) => (
-                  <button
-                    key={p.id}
-                    className="legend-destination"
-                    onClick={() => go(p.id)}
-                  >
-                    <span
-                      className={
-                        'legend-mon ' + p.legendary!.name.toLowerCase()
-                      }
-                    >
-                      <PokemonIcon name={p.legendary!.name} />
+      <Sheet
+        open={guideOpen}
+        onOpenChange={setGuideOpen}
+        modal={false}
+        disablePointerDismissal
+      >
+        <SheetContent
+          id="place-guide"
+          className="place-sheet"
+          showCloseButton={false}
+          finalFocus={guideButtonRef}
+        >
+          <div className="guide-window-bar">
+            <SheetTitle className="guide-window-title">
+              <BookOpen size={17} />{' '}
+              {selected ? `Guia · ${selected.name}` : 'Guia de campo'}
+            </SheetTitle>
+            <SheetClose
+              className="close-guide-button"
+              aria-label="Fechar guia e ver o mapa"
+            >
+              <X size={18} /> <span>Fechar</span>
+            </SheetClose>
+          </div>
+          <div ref={guideRef} className="guide-panel">
+            {selected ? (
+              <PlaceGuide
+                key={selected.id}
+                place={selected}
+                poi={route.poi}
+                tab={detailTab}
+                onTabChange={setDetailTab}
+                onNavigate={go}
+              />
+            ) : (
+              <>
+                <div className="detail-intro">
+                  <span className="eyebrow">SEU GUIA DE CAMPO</span>
+                  <h2>Para onde vamos?</h2>
+                  <p>
+                    Selecione uma cidade, siga uma rota ou entre em uma caverna.
+                    Seu próximo encontro está no mapa.
+                  </p>
+                </div>
+                <div className="home-guide">
+                  <div className="section-label">
+                    <Sparkles size={17} />
+                    <h3>Encontros lendários</h3>
+                    <span>04</span>
+                  </div>
+                  {places
+                    .filter((p) => p.legendary)
+                    .map((p) => (
+                      <button
+                        key={p.id}
+                        className="legend-destination"
+                        onClick={() => go(p.id)}
+                      >
+                        <span
+                          className={
+                            'legend-mon ' + p.legendary!.name.toLowerCase()
+                          }
+                        >
+                          <PokemonIcon name={p.legendary!.name} />
+                        </span>
+                        <span>
+                          <strong>{p.legendary!.name}</strong>
+                          <small>{p.name}</small>
+                        </span>
+                        <ChevronRight size={17} />
+                      </button>
+                    ))}
+                  <div className="field-note">
+                    <span className="eyebrow">BOM SABER</span>
+                    <h3>Na água, use Sea Skim.</h3>
+                    <p>
+                      Não existem varas de pesca em Let’s Go. Os Pokémon
+                      aquáticos aparecem enquanto você navega.
+                    </p>
+                  </div>
+                  <div className="map-legend">
+                    <span>
+                      <i className="city" /> Cidades
                     </span>
                     <span>
-                      <strong>{p.legendary!.name}</strong>
-                      <small>{p.name}</small>
+                      <i className="route" /> Rotas
                     </span>
-                    <ChevronRight size={17} />
-                  </button>
-                ))}
-              <div className="field-note">
-                <span className="eyebrow">BOM SABER</span>
-                <h3>Na água, use Sea Skim.</h3>
-                <p>
-                  Não existem varas de pesca em Let’s Go. Os Pokémon aquáticos
-                  aparecem enquanto você navega.
-                </p>
-              </div>
-              <div className="map-legend">
-                <span>
-                  <i className="city" /> Cidades
-                </span>
-                <span>
-                  <i className="route" /> Rotas
-                </span>
-                <span>
-                  <i className="cave" /> Interiores
-                </span>
-                <span>
-                  <i className="legendary" /> Lendários
-                </span>
-              </div>
-            </div>
-          </>
-        )}
-      </aside>
+                    <span>
+                      <i className="cave" /> Interiores
+                    </span>
+                    <span>
+                      <i className="legendary" /> Lendários
+                    </span>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        </SheetContent>
+      </Sheet>
       <Dialog open={sources} onOpenChange={setSources}>
         <DialogContent className="sources-dialog" showCloseButton={false}>
           <DialogClose className="dialog-close" aria-label="Fechar fontes">

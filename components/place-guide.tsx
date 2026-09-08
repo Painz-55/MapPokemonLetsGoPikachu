@@ -11,6 +11,7 @@ import {
   House,
   Info,
   Repeat2,
+  Scan,
   Sparkles,
   Users,
   Waves,
@@ -147,24 +148,6 @@ export function PlaceGuide({
         </span>
         <h2>{place.name}</h2>
         <p>{place.summary}</p>
-        {city && (
-          <>
-            <div className="city-stats">
-              <span>
-                <House size={17} />
-                <strong>{homeCount}</strong> casas catalogadas
-              </span>
-              <span>
-                <Building2 size={17} />
-                <strong>{city.points.length}</strong> pontos de interesse
-              </span>
-            </div>
-            <p className="coverage-note">
-              Contagem dos locais documentados abaixo, não de todas as
-              residências da cidade.
-            </p>
-          </>
-        )}
       </div>
       <Tabs
         value={tab}
@@ -172,9 +155,15 @@ export function PlaceGuide({
         className="guide-tabs"
       >
         <TabsList className="guide-tab-list" aria-label="Conteúdo do guia">
-          <TabsTrigger value="overview">{city ? 'Cidade' : 'Guia'}</TabsTrigger>
-          <TabsTrigger value="pokemon">Pokémon</TabsTrigger>
-          <TabsTrigger value="items">Itens</TabsTrigger>
+          <TabsTrigger value="pokemon">
+            <Scan size={16} /> Pokémon
+          </TabsTrigger>
+          <TabsTrigger value="overview">
+            <Building2 size={16} /> {city ? 'Cidade' : 'Guia'}
+          </TabsTrigger>
+          <TabsTrigger value="items">
+            <Backpack size={16} /> Itens
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="overview">
           <div className="tab-body">
@@ -200,6 +189,20 @@ export function PlaceGuide({
             {city && (
               <section className="city-directory">
                 <h3>Casas, edifícios & NPCs</h3>
+                <div className="city-stats">
+                  <span>
+                    <House size={17} />
+                    <strong>{homeCount}</strong> casas catalogadas
+                  </span>
+                  <span>
+                    <Building2 size={17} />
+                    <strong>{city.points.length}</strong> pontos de interesse
+                  </span>
+                </div>
+                <p className="coverage-note">
+                  Contagem dos locais documentados abaixo, não de todas as
+                  residências da cidade.
+                </p>
                 <p className="directory-intro">
                   Selecione um local para consultar seus moradores, serviços e
                   recompensas.
@@ -333,6 +336,21 @@ export function PlaceGuide({
         </TabsContent>
         <TabsContent value="pokemon">
           <div className="tab-body">
+            {place.legendary && (
+              <button
+                className="legendary-shortcut"
+                onClick={() => onTabChange('overview')}
+              >
+                <Sparkles size={20} />
+                <span>
+                  <strong>
+                    {place.legendary.name} · Nv. {place.legendary.level}
+                  </strong>
+                  <small>Encontro lendário · ver acesso e preparação</small>
+                </span>
+                <ChevronRight size={18} />
+              </button>
+            )}
             {city?.trade && (
               <section className="trade-card">
                 <span className="eyebrow">
@@ -385,7 +403,12 @@ export function PlaceGuide({
                 ))}
               </section>
             )}
-            <h3>Encontros selvagens</h3>
+            <div className="encounter-heading">
+              <h3>Encontros selvagens</h3>
+              {!noWild.has(place.id) && (
+                <span>{new Set(found.map((e) => e.name)).size} espécies</span>
+              )}
+            </div>
             {noWild.has(place.id) ? (
               <div className="empty-encounters">
                 <Info size={18} />
@@ -421,19 +444,19 @@ export function PlaceGuide({
                 {Object.entries(grouped).map(([name, entries]) => (
                   <section key={name} className="encounter-group">
                     <h4>
-                      {name} <span>{entries?.length}</span>
+                      {name} <span>{entries.length}</span>
                     </h4>
-                    <div className="pokemon-grid">
-                      {entries?.map((e) => (
-                        <div className="pokemon-chip" key={e.name}>
+                    <ul className="pokemon-grid">
+                      {entries.map((e) => (
+                        <li className="pokemon-chip" key={e.name}>
                           <PokemonIcon name={e.name} />
                           <strong>{e.name}</strong>
                           {e.version === 'Pikachu' && (
                             <small>Versão Pikachu</small>
                           )}
-                        </div>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </section>
                 ))}
                 {!visible.length && (

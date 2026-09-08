@@ -14,6 +14,8 @@ Atlas estático em português, compatível com GitHub Pages. Exploração region
 - Destaques de Mewtwo, Articuno, Zapdos e Moltres.
 - Escadas interativas em Cerulean Cave, Mt. Moon, Rock Tunnel e Pokémon Tower; seleção de andares nos demais mapas.
 - Busca por local, Pokémon, NPC ou recompensa. Rotas por hash preservam links diretos, recarregamento e o voltar/avançar do navegador.
+- Guia flutuante sobre o mapa, sem coluna lateral reservada. Abre em **Pokémon**; cidades e itens ficam nas abas seguintes. No celular, o guia abre sobre a parte inferior da tela.
+- Feche com **Fechar** ou **Esc** e reabra em **Pokémon e guia**, mantendo o mapa e seu zoom. A seleção de um andar fecha o guia para revelar o interior; clicar em uma casa/NPC abre diretamente sua ficha na aba Cidade.
 
 ## Limites documentados
 
